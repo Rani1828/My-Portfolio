@@ -1,0 +1,423 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ECLIPSE</title>
+
+    <link rel="stylesheet" href="style.css" />
+<script src="https://kit.fontawesome.com/ebdb9ccf68.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <div id="header">
+
+        <div id="container">
+
+            <nav>
+
+                <div class="brand">
+                    <img src="images/logo.png"
+                         class="logo"
+                         alt="melodyX Logo">
+                </div>
+
+
+                <ul id="sidemenu">
+
+                    <li>
+                        <a href="#header"><b>Home</b></a>
+                    </li>
+
+                    <li>
+                        <a href="#about"><b>About</b></a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"><b>Contact</b></a>
+                    </li>
+
+                    <i class="fa-solid fa-xmark" onclick="openmenu()"></i>
+    
+
+                </ul>
+
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+
+
+            <!-- ================= MUSIC PLAYER ================= -->
+
+            <main id="music-section">
+
+                <div class="music-player">
+
+                    <!-- Song Image -->
+
+                    <div class="song-image-container">
+
+                        <img id="song-image"
+                             src="images/song1.jpg"
+                             alt="Song Cover">
+
+                    </div>
+
+
+                    <!-- Song Information -->
+
+                    <div class="song-information">
+
+                        <h1 id="song-title">
+                            Song Title 1
+                        </h1>
+
+                        <p id="song-artist">
+                            Artist Name
+                        </p>
+
+                    </div>
+
+
+                    <!-- Audio -->
+
+                    <audio id="audio-player">
+
+                        <source src="songs/song1.mp3"
+                                type="audio/mpeg">
+
+                        Your browser does not support the audio element.
+
+                    </audio>
+
+
+                    <!-- ================= PROGRESS BAR ================= -->
+
+                    <div class="progress-container">
+
+                        <span id="current-time">
+                            0:00
+                        </span>
+
+
+                        <input
+                            type="range"
+                            id="progress-bar"
+                            min="0"
+                            max="100"
+                            value="0"
+                            step="0.1"
+                        >
+
+
+                        <span id="duration">
+                            0:00
+                        </span>
+
+                    </div>
+
+
+                    <!-- ================= MUSIC CONTROLS ================= -->
+
+                    <div class="music-controls">
+
+                        <!-- Previous Song -->
+
+                        <button
+                            type="button"
+                            id="previous-button"
+                            class="control-button"
+                            aria-label="Previous Song">
+
+                            <i class="fa-solid fa-backward"></i>
+
+                        </button>
+
+
+                        <!-- Play / Pause -->
+
+                        <button
+                            type="button"
+                            id="play-button"
+                            class="play-button"
+                            aria-label="Play Song">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <!-- Next Song -->
+
+                        <button
+                            type="button"
+                            id="next-button"
+                            class="control-button"
+                            aria-label="Next Song">
+
+                            <i class="fa-solid fa-forward"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= ABOUT ================= -->
+
+<div id="about">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- About Image -->
+
+            <div class="about-col-1">
+
+                <img src="images/about.png"
+                     alt="MelodyX Music">
+
+            </div>
+
+
+            <!-- About Content -->
+
+            <div class="about-col-2">
+
+                <h1 class="sub-title">
+                    About ECLIPSE
+                </h1>
+
+
+                <p>
+                    <b>
+                        ECLIPSE is a modern music platform created for
+                        music lovers who want to enjoy their favorite
+                        songs in a simple, smooth, and beautiful
+                        environment. Discover music, listen to your
+                        favorite tracks, and enjoy every melody with
+                        an easy-to-use music player.
+                    </b>
+                </p>
+
+
+                <!-- Features -->
+
+                <div class="tab-titles">
+
+                    <p class="tab-links active-link"
+                       onclick="opentab('features')">
+
+                        Features
+                        <i class="fa-solid fa-music"></i>
+
+                    </p>
+
+
+                    <p class="tab-links"
+                       onclick="opentab('experience')">
+
+                        Experience
+                        <i class="fa-solid fa-headphones"></i>
+
+                    </p>
+
+
+                    <p class="tab-links"
+                       onclick="opentab('mission')">
+
+                        Our Mission
+                        <i class="fa-solid fa-heart"></i>
+
+                    </p>
+
+                </div>
+
+
+                <!-- Features Tab -->
+
+                <div class="tab-contents active-tab"
+                     id="features">
+
+                    <ul>
+
+                        <li>
+                            <span>Music Player</span>
+                            <br>
+                            Play, pause, skip, and control your
+                            favorite songs with ease.
+                        </li>
+
+                        <li>
+                            <span>Song Collection</span>
+                            <br>
+                            Explore a collection of carefully
+                            selected tracks and discover new music.
+                        </li>
+
+                        <li>
+                            <span>Easy Controls</span>
+                            <br>
+                            Use the previous, play, and next controls
+                            together with the interactive progress bar.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Experience Tab -->
+
+                <div class="tab-contents"
+                     id="experience">
+
+                    <ul>
+
+                        <li>
+                            <span>Simple Interface</span>
+                            <br>
+                            A clean and modern interface designed
+                            to keep the focus on your music.
+                        </li>
+
+                        <li>
+                            <span>Responsive Design</span>
+                            <br>
+                            Enjoy MelodyX across desktop, tablet,
+                            and mobile devices.
+                        </li>
+
+                        <li>
+                            <span>Seamless Listening</span>
+                            <br>
+                            Move through your playlist and control
+                            playback without leaving the player.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Mission Tab -->
+
+                <div class="tab-contents"
+                     id="mission">
+
+                    <ul>
+
+                        <li>
+                            <span>Our Vision</span>
+                            <br>
+                            To create a simple and enjoyable digital
+                            space where everyone can connect with music.
+                        </li>
+
+                        <li>
+                            <span>Our Goal</span>
+                            <br>
+                            Make discovering and listening to music
+                            easy, accessible, and enjoyable.
+                        </li>
+
+                        <li>
+                            <span>Made for Music Lovers</span>
+                            <br>
+                            MelodyX brings music, technology, and
+                            creativity together in one place.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+
+
+ <!-- .................................contact................................................ -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> bushrasaleemcs21@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +92 316 5757554</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://x.com/" target="_blank"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/?hl=en" target="_blank"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="https://pk.linkedin.com/" target="_blank"
+                ><i class="fa-brands fa-square-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn"
+              ><i class="fa-solid fa-download"></i> Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="YOUR_FORM_NAME">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="xyz@email.com"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Type your message here"
+              ></textarea>
+              <button type="submit" class="btn" id="submitButton">
+                Submit <i class="fa-solid fa-upload"></i>
+              </button>
+
+              <p id="formMessage"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Rani. All rights reserved.</p>
+        <p>Made with lots of <i class="fa-solid fa-heart"></i> in <span>Pakistan.</span></p>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+</body>
+
+</html>
+

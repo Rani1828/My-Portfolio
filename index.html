@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rani Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ebdb9ccf68.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="container">
+        <nav>
+          <img src="images/logo.png" class="logo" alt="Rani Logo" />
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p><i>Welcome to My Portfolio</i></p>
+
+          <h1>
+            I'm <span>Rani</span> <br />
+            A professional web developer
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ............................ABOUT.................................... -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="Image of Hurear" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              <b>
+                I’m **Rani**, a passionate web developer focused on creating
+                modern, responsive, and user-friendly websites. I enjoy turning
+                creative ideas into clean, functional digital experiences
+                through thoughtful design and efficient code. I’m constantly
+                learning new technologies and improving my skills to build
+                websites that are visually appealing, fast, accessible, and easy
+                to use. My goal is to create meaningful digital experiences that
+                combine creativity, functionality, and technology.
+              </b>
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills <i class="fa-solid fa-kitchen-set"></i>
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience <i class="fa-solid fa-microscope"></i>
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                Education <i class="fa-solid fa-book"></i>
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>August-2026</span><br />Internship at Code Alpha</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2025-Current</span><br />Studying BS at Computer Science
+                  Department of UET Taxila
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ...................................Services........................................ -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-visual-studio"></i>
+            <h2>Web Designing</h2>
+            <p>
+              Creating modern, responsive, and visually appealing websites that
+              are easy to navigate and work smoothly across all devices.
+            </p>
+            <a href="#"
+              ><u>Learn More <i class="fa-solid fa-arrow-pointer"></i></u
+            ></a>
+          </div>
+          <div>
+            <i class="fa-solid fa-bars"></i>
+            <h2>UI/UX Designing</h2>
+            <p>
+              Designing clean and intuitive interfaces that combine creativity,
+              usability, and seamless experiences for every type of user.
+            </p>
+            <a href="#"
+              ><u>Learn More <i class="fa-solid fa-arrow-pointer"></i></u
+            ></a>
+          </div>
+          <div>
+            <i class="fa-brands fa-google-play"></i>
+            <h2>App Development</h2>
+            <p>
+              Developing modern, reliable, and user-friendly mobile applications
+              with smooth performance and engaging features for Android and iOS.
+            </p>
+            <a href="#"
+              ><u>Learn More <i class="fa-solid fa-arrow-pointer"></i></u
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- .....................................portfolio............................................... -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="Work 1" />
+            <div class="layer">
+              <h3>melodyX_A musicplayer</h3>
+              <p>
+                Frontend of a music player using HTML,CSS and JAVASCRIPT.
+              </p>
+              <a href="https://github.com/Hurear2006/melodyX_A-musicplayer.git" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="Work 2" />
+            <div class="layer">
+              <h3>Quotes and Riddles Library</h3>
+              <p>
+                A C++ project for 1st semester Computer Science or Software Enjineering students.
+              </p>
+              <a href="https://github.com/Rani1828/Quotes-and-Riddles-Library.git" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="Work 3" />
+            <div class="layer">
+              <h3>Railways Booking System</h3>
+              <p>
+                An Object Oriented Programming project for 2nd semester Computer science and Software Engineering students made by using C++ language.
+              </p>
+              <a href="https://github.com/Rani1828/Railways-Booking-System.git" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn"
+          ><i class="fa-solid fa-magnifying-glass"></i> See more</a
+        >
+      </div>
+    </div>
+
+    <!-- .................................contact................................................ -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> bushrasaleemcs21@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +92 316 5757554</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://x.com/" target="_blank"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/?hl=en" target="_blank"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="https://pk.linkedin.com/" target="_blank"
+                ><i class="fa-brands fa-square-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn"
+              ><i class="fa-solid fa-download"></i> Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="YOUR_FORM_NAME">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="xyz@email.com"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Type your message here"
+              ></textarea>
+              <button type="submit" class="btn" id="submitButton">
+                Submit <i class="fa-solid fa-upload"></i>
+              </button>
+
+              <p id="formMessage"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Rani. All rights reserved.</p>
+        <p>Made with lots of <i class="fa-solid fa-heart"></i> in <span>Pakistan.</span></p>
+      </div>
+    </div>
+  </body>
+</html>
